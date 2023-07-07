@@ -1,0 +1,15 @@
+helmCharts:
+- name: boot-project
+  includeCRDs: false
+  valuesInline:
+  valuesFile: https://raw.githubusercontent.com/eformat/boot-project-values/main/clusters/dev/project1/values.yaml
+  version: 0.0.1
+  releaseName: project1
+  repo: https://eformat.github.io/helm-charts
+- name: boot-project
+  includeCRDs: false
+  valuesInline:
+  valuesFile: https://raw.githubusercontent.com/eformat/boot-project-values/main/clusters/dev/project2/values.yaml
+  version: 0.0.1
+  releaseName: project2
+  repo: https://eformat.github.io/helm-charts

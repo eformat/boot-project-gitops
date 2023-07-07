@@ -1,0 +1,39 @@
+---
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: boot-projects
+placementBindingDefaults:
+  name: boot-projects
+policyDefaults:
+  categories:
+    - CM Configuration Management
+  complianceType: "musthave"
+  controls: 
+    - CM-2 Baseline Configuration
+  consolidateManifests: false
+  disabled: false
+  namespace: open-cluster-management-global-set
+  pruneObjectBehavior: "None"
+  remediationAction: enforce
+  severity: medium
+  standards:
+    - NIST SP 800-53
+  policyAnnotations: {"argocd.argoproj.io/compare-options": "IgnoreExtraneous"}
+policies:
+  - name: boot-projects-dev
+    placement:
+      placementName: placement-boot-projects-dev
+    manifests:
+      - path: input/clusters/dev
+        kustomizeOptions:
+          enableAlphaPlugins: true
+          enableHelm: true
+  - name: boot-projects-test
+    placement:
+      placementName: placement-boot-projects-test
+    manifests:
+      - path: input/clusters/test
+        kustomizeOptions:
+          enableAlphaPlugins: true
+          enableHelm: true
