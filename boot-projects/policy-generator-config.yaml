@@ -22,7 +22,6 @@ policyDefaults:
   policyAnnotations: {"argocd.argoproj.io/compare-options": "IgnoreExtraneous"}
 policies:
   - name: boot-projects-dev
-    pruneObjectBehavior: "DeleteIfCreated"
     placement:
       placementName: placement-boot-projects-dev
     manifests:
