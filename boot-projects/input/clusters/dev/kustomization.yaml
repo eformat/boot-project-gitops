@@ -9,7 +9,7 @@ helmCharts:
   repo: https://eformat.github.io/helm-charts
 - name: boot-project
   includeCRDs: false
-    valuesInline:
+  valuesInline:
     enabled: true
   valuesFile: https://raw.githubusercontent.com/eformat/boot-project-values/main/clusters/dev/project2/values.yaml
   version: 0.0.1
