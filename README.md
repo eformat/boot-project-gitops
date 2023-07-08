@@ -8,3 +8,17 @@ Use this Helm Chart with ArgoCD when practicing "Everything as Code" using GitOp
 - https://github.com/eformat/boot-project-values
 
 This repo contains the setup and per-cluster, gitops argocd files.
+
+## Setup
+
+Setup ACM and Cluster-Scoped ArgoCD
+
+```bash
+oc apply -f bootstrap-acm-global-gitops/setup.yaml
+```
+
+## Bootstrap Projects
+
+```bash
+oc apply -f applications/boot-projects-appset.yaml
+```
