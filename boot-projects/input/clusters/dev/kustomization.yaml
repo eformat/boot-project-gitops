@@ -2,7 +2,7 @@ helmCharts:
 - name: boot-project
   includeCRDs: false
   valuesInline:
-    enabled: true
+    enabled: false
   valuesFile: https://raw.githubusercontent.com/eformat/boot-project-values/main/clusters/dev/project1/values.yaml
   version: 0.0.1
   releaseName: project1
