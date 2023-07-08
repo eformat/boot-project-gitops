@@ -22,3 +22,8 @@ oc apply -f bootstrap-acm-global-gitops/setup.yaml
 ```bash
 oc apply -f applications/boot-projects-appset.yaml
 ```
+
+## Label Clusters
+
+- Label you cluster with `boot-projects-dev=true` to setup dev projects
+- Label you cluster with `boot-projects-test=true` to setup test projects
