@@ -22,6 +22,7 @@ policyDefaults:
   policyAnnotations: {"argocd.argoproj.io/compare-options": "IgnoreExtraneous"}
 policies:
   - name: boot-projects-dev
+    #pruneObjectBehavior: "DeleteAll"
     placement:
       placementName: placement-boot-projects-dev
     manifests:
@@ -30,6 +31,7 @@ policies:
           enableAlphaPlugins: true
           enableHelm: true
   - name: boot-projects-test
+    #pruneObjectBehavior: "DeleteAll"
     placement:
       placementName: placement-boot-projects-test
     manifests:
