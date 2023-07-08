@@ -13,3 +13,7 @@ helmCharts:
   version: 0.0.1
   releaseName: project2
   repo: https://eformat.github.io/helm-charts
+
+# customizations per project
+resources:
+- project2
