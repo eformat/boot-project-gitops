@@ -9,4 +9,4 @@ spec:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: project1
+          name: project1-dev

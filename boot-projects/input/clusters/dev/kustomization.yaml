@@ -14,4 +14,4 @@ helmCharts:
 
 # customizations per project
 #resources:
-#- custom/project2
+#- custom/project2-dev
