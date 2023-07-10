@@ -13,5 +13,5 @@ helmCharts:
   repo: https://eformat.github.io/helm-charts
 
 # customizations per project
-#resources:
-#- custom/project2-dev
+resources:
+- custom/project2-dev
