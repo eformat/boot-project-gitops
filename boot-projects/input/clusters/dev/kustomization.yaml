@@ -11,7 +11,3 @@ helmCharts:
   version: 0.0.1
   releaseName: project2-dev
   repo: https://eformat.github.io/helm-charts
-
-# # customizations per project
-# resources:
-# - custom/project2-dev
