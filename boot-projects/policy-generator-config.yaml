@@ -31,7 +31,8 @@ policies:
           enableAlphaPlugins: true
           enableHelm: true
   - name: boot-projects-dev-custom
-    pruneObjectBehavior: None
+    pruneObjectBehavior: DeleteAll
+    disabled: false
     placement:
       placementName: placement-boot-projects-dev
     manifests:
