@@ -14,7 +14,7 @@ policyDefaults:
   consolidateManifests: false
   disabled: false
   namespace: open-cluster-management-global-set
-  pruneObjectBehavior: "None"
+  pruneObjectBehavior: None
   remediationAction: enforce
   severity: medium
   standards:
@@ -22,7 +22,7 @@ policyDefaults:
   policyAnnotations: {"argocd.argoproj.io/compare-options": "IgnoreExtraneous"}
 policies:
   - name: boot-projects-dev
-    pruneObjectBehavior: "None"
+    pruneObjectBehavior: None
     placement:
       placementName: placement-boot-projects-dev
     manifests:
