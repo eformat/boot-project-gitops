@@ -30,7 +30,7 @@ policies:
         kustomizeOptions:
           enableAlphaPlugins: true
           enableHelm: true
-  - name: boot-projects-project2-dev-custom
+  - name: boot-project2-dev-custom
     pruneObjectBehavior: DeleteAll
     disabled: false
     placement:
