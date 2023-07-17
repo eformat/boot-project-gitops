@@ -30,6 +30,14 @@ policies:
         kustomizeOptions:
           enableAlphaPlugins: true
           enableHelm: true
+  - name: boot-projects-dev-custom
+    pruneObjectBehavior: None
+    placement:
+      placementName: placement-boot-projects-dev
+    manifests:
+      - path: input/clusters/dev/custom/project2-dev
+        kustomizeOptions:
+          enableAlphaPlugins: true
   - name: boot-projects-test
     #pruneObjectBehavior: "DeleteAll"
     placement:
