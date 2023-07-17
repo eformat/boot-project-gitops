@@ -1,0 +1,13 @@
+---
+kind: RoleBinding
+metadata:
+  name: monitoring-edit
+  namespace: project2-dev
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: monitoring-edit
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: project2-admin
